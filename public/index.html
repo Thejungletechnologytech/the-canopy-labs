@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Canopy Labs</title>
+  <meta name="description" content="The Canopy Labs builds advertising technology that helps publishers and app developers grow their revenue.">
+  <meta name="theme-color" content="#0d2b1f">
+  <meta property="og:title" content="The Canopy Labs">
+  <meta property="og:description" content="Advertising technology for publishers and app developers.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="canopy" aria-hidden="true">
+    <span class="leaf l1"></span><span class="leaf l2"></span><span class="leaf l3"></span>
+    <span class="leaf l4"></span><span class="leaf l5"></span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="/">
+      <img src="/favicon.svg" alt="" width="32" height="32">
+      <span>The Canopy Labs</span>
+    </a>
+    <nav>
+      <a href="#what-we-do">What we do</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Something is growing</p>
+      <h1>Ad technology that helps your inventory <em>thrive</em>.</h1>
+      <p class="lede">
+        The Canopy Labs builds monetization infrastructure for publishers and app developers:
+        transparent demand, smarter yield, and reporting you can trust.
+        Our full site is on its way.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="#what-we-do">What we do</a>
+        <a class="btn ghost" href="/sellers.json">sellers.json</a>
+      </div>
+    </section>
+
+    <section id="what-we-do" class="pillars">
+      <article>
+        <h2>Publisher monetization</h2>
+        <p>Connect web and app inventory to premium global demand through a single integration.</p>
+      </article>
+      <article>
+        <h2>Yield optimization</h2>
+        <p>Floors, waterfalls and header bidding tuned continuously to maximize every impression.</p>
+      </article>
+      <article>
+        <h2>Transparency first</h2>
+        <p>Supply-chain compliant with ads.txt, app-ads.txt and sellers.json from day one.</p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> The Canopy Labs. All rights reserved.</p>
+    <p><a href="/sellers.json">sellers.json</a></p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
