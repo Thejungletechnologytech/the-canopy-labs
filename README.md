@@ -10,7 +10,8 @@ public/
 ├── 404.html       # not-found page
 ├── styles.css
 ├── favicon.svg
-└── sellers.json   # IAB sellers.json, served at /sellers.json
+├── sellers.json   # IAB sellers.json, served at /sellers.json
+└── app-ads.txt    # IAB app-ads.txt, served at /app-ads.txt
 ```
 
 No build step: everything in `public/` is deployed as-is.
@@ -32,6 +33,17 @@ To add a seller, append an entry to the `sellers` array:
 `seller_type` is one of `PUBLISHER`, `INTERMEDIARY` or `BOTH`. `contact_email` / `contact_address`
 are optional top-level fields. Check that the JSON is valid before pushing, because a broken file breaks
 buyer crawlers.
+
+## app-ads.txt
+
+Served at `https://thecanopylabs.in/app-ads.txt`. Plain text with one authorized seller per line:
+
+```
+<ad system domain>, <seller account id>, DIRECT|RESELLER[, <cert authority id>]
+```
+
+Lines are grouped under a `# <network>` comment. To update a network, replace its block with the
+lines that network provides.
 
 ## Local preview
 
